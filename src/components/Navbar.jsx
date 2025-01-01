@@ -11,7 +11,6 @@ function Navbar() {
   return (
     <nav className='navbar-container'>
       <ul className='list-container'>
-        {/* <li id="menu-icon" className="list-item">☰</li> */}
         <li>
           <Link className="list-item" to="/">Home</Link>
         </li>

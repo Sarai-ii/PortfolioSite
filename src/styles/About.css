@@ -1,0 +1,175 @@
+/* General styling */
+.about-main-container {
+    position: relative;
+    width: 100%;
+    height: 200vh; /* Full height with some extra space */
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .about-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+  }
+  
+  .about-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use cover instead of contain for better scaling */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+  }
+  
+  .about-title {
+    padding-left: 40px;
+    font-size: 3rem; /* Default font size for larger screens */
+  }
+  
+  .professional-summary, .skills-container {
+    position: relative;
+    padding: 40px;
+    z-index: 1; /* Ensures text is on top of the overlay */
+  }
+
+  .skills-container{
+    background-color: #07509f;
+    border: 1px solid white;
+  }
+  
+  /* Mobile-first styles (default) */
+  @media (max-width: 900px) {
+    .about-main-container {
+      height: 300vh; /* Adjust container height for mobile */
+      padding: 0 10px; /* Reduce padding on mobile */
+    }
+  
+    .about-title {
+      padding-left: 20px;
+      font-size: 1.8rem; /* Smaller font size for mobile */
+      text-align: center; /* Center align the title on mobile */
+    }
+  
+    .about-background {
+      height: 100%;
+    }
+  
+    .about-background img {
+      object-fit: cover; /* Ensure the background image covers the container */
+    }
+  
+    .overlay {
+      opacity: 0.5; /* Slightly reduce opacity on mobile */
+    }
+  
+    .professional-summary, .skills-container {
+      padding: 20px; /* Reduce padding on mobile */
+      font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+  
+    /* Make skills section stack vertically */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skills-container ul {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* Tablet (900px to 1150px) */
+  @media (min-width: 900px) and (max-width: 1150px) {
+    .about-main-container {
+      height: 250vh; /* Adjust height for tablet */
+    }
+  
+    .about-title {
+      font-size: 2.2rem; /* Smaller than desktop, larger than mobile */
+      text-align: center;
+    }
+  
+    .about-background {
+      height: 110%;
+    }
+  
+    .about-background img {
+      object-fit: cover;
+    }
+  
+    .overlay {
+      opacity: 0.6;
+    }
+  
+    .professional-summary, .skills-container {
+      padding: 30px;
+      font-size: 1.1rem; /* Slightly larger font size */
+    }
+  
+    /* Skills section: Center align for tablet */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skills-container ul {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
+  /* Desktop (1150px and above) */
+  @media (min-width: 1150px) {
+    .about-main-container {
+      height: 200vh; /* Default height for desktop */
+    }
+  
+    .about-title {
+      font-size: 3.5rem; /* Larger font size for desktop */
+      padding-left: 40px;
+    }
+  
+    .about-background {
+      height: 110%;
+    }
+  
+    .about-background img {
+      object-fit: cover;
+    }
+  
+    .overlay {
+      opacity: 0.6;
+    }
+  
+    .professional-summary, .skills-container {
+      padding: 40px;
+      font-size: 1.3rem; /* Larger font size for desktop */
+    }
+  
+    /* Skills section: Grid layout for desktop */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Three columns for larger screens */
+      gap: 30px;
+    }
+  
+    .skills-container ul {
+      width: auto;
+      text-align: left; /* Align to left for desktop */
+    }
+  }
+  

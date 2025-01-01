@@ -1,23 +1,24 @@
 .navbar-container{
-    align-items: center;
     background-color: #07509f;
     display: flex;
     justify-content: center;
-    /* padding: 10px; */
+    padding: 25px;
 }
 .list-container{
     display: flex;
+    justify-content: space-around;
     list-style: none;
     margin: 3px;
     padding: 3px;
+    width: 70%;
 }
-.list-item, .menu-icon{
+.list-item{
     color: white;
-    /* padding: 10px; */
+    display: flex;  
     text-decoration: none;
     transition: color .3s ease, transform .3s ease;
 }
-.list-item:hover, .menu-icon:hover {
-    color: rgb(255, 255, 255);
+.list-item:hover{
+    color: #D3D3D3;
     transform: scale(1.1);
 }

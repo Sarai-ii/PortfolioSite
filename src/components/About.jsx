@@ -1,16 +1,19 @@
 //DEPENDENCIES
-import { Link } from "react-router-dom"
+import Me from "../assets/me.jpeg"
+//Styling
+import "../styles/About.css"
 function About() {
   return (
-    <main className="container">
-      <header className="header-container">
-        <h1>About Me</h1>
-      </header>
-      <section className="professional-summary">
-        <h2>Professional Summary</h2>
+    <div className="about-main-container">
+      <div className="about-background">
+        <img className="aboutMe-img" src={Me} alt="background"></img>
+        <div className="overlay">
+          <h1 className="about-title">Hey, I'm Sarai.</h1>
+          <section className="professional-summary">
+        {/* <h2>Professional Summary</h2> */}
 
         {/* paragraph one */}
-        <p className="para1"> Hi, I’m Sarai Thomas, a creative force driven by curiosity, a love for storytelling, and a passion for solving problems. I thrive on blending artistry with strategy, whether it’s brainstorming marketing campaigns, cracking a complex coding challenge, or finding the perfect way to organize. Life, much like my career, is a dynamic mix of creativity, precision, and just the right amount of learning to keep things exciting. </p>
+        <p className="para1"> I'm a design-minded force driven by curiosity, a love for storytelling, and a passion for solving problems. I thrive on blending artistry with strategy, whether it’s brainstorming marketing campaigns, cracking a complex coding challenge, or finding the perfect way to organize. Life, much like my career, is a dynamic mix of creativity, precision, and just the right amount of learning to keep things exciting. </p>
 
         {/* paragraph two */}
         <p className="para2">Bridging my marketing and technical expertise has become my superpower. The ability to understand user behavior, design visually appealing interfaces, and optimize functionality equips me to thrive in roles that demand both strategic and technical prowess. Whether it's leveraging my storytelling skills to design engaging user interfaces or using analytical thinking to solve coding challenges, I excel at connecting the dots between what users need and want.</p>
@@ -30,37 +33,39 @@ function About() {
         {/* paragraph seven */}
         <p className="para7"> I’m not just building applications; I’m building connections between people and technology in meaningful ways. 
         </p>
-      </section>
-      <section className="skills-container">
-        <h2>Core Skills & Technologies:</h2>
-        <ul className="tech-skills">
-          <h3>Technological Skills</h3>
-          <li>Frontend: JavaScript (ES5 & ES6), React(including Hooks & Context API), Redux Toolkit, Next.js, Bootstrap</li>
-          <li>Backend: Node.js, Express, REST APIs</li>
-          <li>DevOps: Netlify, Github Actions, Render</li>
-          <li>Databases: Firebase, PostgreSQL</li>                                    
-          <li>Testing: Jest, Cypress, Postman</li>
-        </ul>
-        <ul>
-          <h3>Design & Strategy</h3>
-          <li>UI/UX: Figma, Adobe XD, wireframing, interactive prototyping</li>
-          <li>Responsive Web Design: Mobile-first development, CSS Grid, Flexbox, CSS Libraries </li>
-          <li>Accessibility: WCAG compliance, semantic HTML </li>
-          <li>SEO & Analytics: Google Analytics, Core Web Vitals, Lighthouse reports, A/B testing</li>
-        </ul>
-        <ul>
-          <h3>Project Management</h3>
-          <li>Agile Methodlogies: Kanban, Scrum</li>
-          <li>Collaborative Tools: Trello, Asana, Jira, Slack, Notion, Github</li>
-          <li>Leadership: cross-functional team facilitation, stakeholder communication</li>
-        </ul>
-        <ul>
-          <h3>Creative Tools</h3>
-          <li>Canva</li>
-          <li>Adobe Creative Suite & Other Video & Photo Editing Software</li>
-        </ul>
-      </section>
-    </main>
+          </section>
+        <section className="skills-container">
+          <h2>Core Skills & Technologies:</h2>
+          <ul className="tech-skills">
+            <h3>Technological Skills</h3>
+            <li>Frontend: JavaScript (ES5 & ES6), React(including Hooks & Context API), Redux Toolkit, Next.js, Bootstrap</li>
+            <li>Backend: Node.js, Express, REST APIs</li>
+            <li>DevOps: Netlify, Github Actions, Render</li>
+            <li>Databases: Firebase, PostgreSQL</li>                                    
+            <li>Testing: Jest, Cypress, Postman</li>
+          </ul>
+          <ul>
+            <h3>Design & Strategy</h3>
+            <li>UI/UX: Figma, Adobe XD, wireframing, interactive prototyping</li>
+            <li>Responsive Web Design: Mobile-first development, CSS Grid, Flexbox, CSS Libraries </li>
+            <li>Accessibility: WCAG compliance, semantic HTML </li>
+            <li>SEO & Analytics: Google Analytics, Core Web Vitals, Lighthouse reports, A/B testing</li>
+          </ul>
+          <ul>
+            <h3>Project Management</h3>
+            <li>Agile Methodlogies: Kanban, Scrum</li>
+            <li>Collaborative Tools: Trello, Asana, Jira, Slack, Notion, Github</li>
+            <li>Leadership: cross-functional team facilitation, stakeholder communication</li>
+          </ul>
+          <ul>
+            <h3>Creative Tools</h3>
+            <li>Canva</li>
+            <li>Adobe Creative Suite & Other Video & Photo Editing Software</li>
+          </ul>
+        </section>
+        </div>
+      </div>
+    </div>
   )
 }
-  export default About   
+export default About   

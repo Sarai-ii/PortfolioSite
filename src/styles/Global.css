@@ -1,9 +1,8 @@
-*{
-    font-family: 'Arial', sans-serif
-    /* color:rgb(139, 86, 22) */
-    margin: 0;
-}
 body{
-    background: linear-gradient(135deg, #007BFF, #4FAFFF); /* Modern blue gradient */
-                                                                                                                  
+    background: linear-gradient(135deg, #64aaf5, #4FAFFF); 
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    overflow-x: hidden;
+    overflow-y:auto;     
 }

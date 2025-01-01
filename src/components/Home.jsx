@@ -16,7 +16,7 @@ function Home() {
           SARAI THOMAS
           </Link>
         </h1>
-        <p className="home-intro-text"> Welcome to my portfolio, click my name to learn more about my journey into Tech. </p>
+        <p className="home-intro-text"> Welcome to my portfolio, click my name to learn more about my journey into tech. </p>
       </main>
     </div>
   )

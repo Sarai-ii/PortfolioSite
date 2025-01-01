@@ -1,12 +1,10 @@
-body{
-    background: linear-gradient(135deg, #64aaf5, #4FAFFF);
+.homePage-container{
     align-items: center;
-    color: white;
+    height: 100vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
     padding-top: 0;
-    margin: 0; /* Setting this to 0 helps with navbar but will offset all other content and will require containers to include a margin for responsiveness */
 }
 .home-name {
     color: #07509f;
@@ -19,6 +17,7 @@ body{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .home-name:hover {
+    /* cursor: pointer; */
     color: black;
 }
 .home-intro-text {

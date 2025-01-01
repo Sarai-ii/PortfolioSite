@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(135deg, #64aaf5, #4FAFFF);
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 0;
+    margin: 0; /* Setting this to 0 helps with navbar but will offset all other content and will require containers to include a margin for responsiveness */
+}
+.home-name {
+    color: #07509f;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.home-name:hover {
+    color: black;
+}
+.home-intro-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}

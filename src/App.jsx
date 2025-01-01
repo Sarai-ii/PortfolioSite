@@ -1,18 +1,30 @@
+// Dependencies
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+//Styling
 import './App.css'
+//Components
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
-       
-    </>
+    <Router>   
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/about' element={<About />}/>
+        <Route path='/projects' element={<Projects />}/>
+        <Route path='/contact' element={<Contact />}/>
+      </Routes>
+      {/* <Footer /> */}
+    </Router>
   )
 }
 

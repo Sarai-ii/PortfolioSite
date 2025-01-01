@@ -1,0 +1,9 @@
+*{
+    font-family: 'Arial', sans-serif
+    /* color:rgb(139, 86, 22) */
+    margin: 0;
+}
+body{
+    background: linear-gradient(135deg, #007BFF, #4FAFFF); /* Modern blue gradient */
+                                                                                                                  
+}
